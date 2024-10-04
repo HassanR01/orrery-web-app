@@ -1,3 +1,4 @@
+import Header from "./components/main/header";
 import "./globals.css";
 
 export const metadata = {
@@ -8,7 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-mainFont">
+      <body className="font-mainFont bg-bgColor">
+        <Header />
         {children}
       </body>
     </html>

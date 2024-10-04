@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         mainFont: ["Tajawal"]
+      },
+      colors: {
+        textColor: '#48FCFA',
+        bgColor: '#0B1024'
       }
     },
   },
