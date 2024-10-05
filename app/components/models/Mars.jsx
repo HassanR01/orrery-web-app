@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
@@ -8,10 +9,8 @@ export function Mars(props) {
             <mesh
                 castShadow
                 receiveShadow
-                geometry={nodes.Sphere_Material002_0.geometry}
-                material={materials['Material.002']}
-                rotation={[-Math.PI / 2, 0, 0]}
-                scale={100}
+                geometry={nodes.pSphere1_lambert3_0.geometry}
+                material={materials.lambert3}
             />
         </group>
     )

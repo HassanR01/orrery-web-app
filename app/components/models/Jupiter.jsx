@@ -13,7 +13,6 @@ export function Jupiter(props) {
                         geometry={nodes.Sphere_Material_0.geometry}
                         material={materials.Material}
                         rotation={[-Math.PI / 2, 0, 0]}
-                        scale={101}
                     />
                 </group>
             </group>

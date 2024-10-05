@@ -10,7 +10,7 @@ export function Sun(props) {
     // Rotate the model around its Y-axis
     useFrame(() => {
         if (group.current) {
-            group.current.rotation.y += 0.01 // Adjust the rotation speed here
+            group.current.rotation.y += 0.001 // Adjust the rotation speed here
         }
     })
 
@@ -30,7 +30,7 @@ export function Sun(props) {
                                         material={materials.material}
                                     />
                                 </group>
-                                <group name="UnstableStarref" rotation={[-Math.PI / 2, 0, 0]} scale={1.01}>
+                                <group name="UnstableStarref" rotation={[-Math.PI / 2, 0, 0]}>
                                     <mesh
                                         name="UnstableStarref_2_0"
                                         castShadow

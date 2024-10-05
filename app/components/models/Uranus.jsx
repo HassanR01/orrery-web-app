@@ -2,7 +2,7 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function uranus(props) {
+export function Uranus(props) {
     const { nodes, materials } = useGLTF('/uranus.glb')
     return (
         <group {...props} dispose={null}>

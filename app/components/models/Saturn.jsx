@@ -1,10 +1,19 @@
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export function Saturn(props) {
     const group = useRef()
     const { nodes, materials, animations } = useGLTF('/saturn_planet.glb')
     const { actions } = useAnimations(animations, group)
+
+    // Rotate the model around its Y-axis
+    useFrame(() => {
+        if (group.current) {
+            group.current.rotation.y += 0.01 // Adjust the rotation speed here
+        }
+    })
+
     return (
         <group ref={group} {...props} dispose={null}>
             <group name="Sketchfab_Scene">
